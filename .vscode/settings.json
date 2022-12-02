@@ -1,0 +1,8 @@
+{ 
+    "C_Cpp.default.includePath": ["D:\\SGDK\\inc",
+    "D:\\SGDK\\res",
+    "res",
+    "inc"
+],
+"GDK": "d:\\SGDK"
+}

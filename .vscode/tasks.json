@@ -1,0 +1,43 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Genesis Build (Debug)",
+        "type": "shell",
+        "windows": {
+            //D:\SGDK\bin\make.exe -f D:\SGDK\makefile.gen debug 
+            "command": "${env:GDK}\\bin\\make.exe -f ${env:GDK}\\makefile.gen debug",
+           },
+        "group": {
+          "kind": "build",
+          "isDefault": false
+        }
+      },
+      {
+        "label": "Genesis Build (Release)",
+        "type": "shell",
+        "windows": {
+            //D:\SGDK\bin\make.exe -f D:\SGDK\makefile.gen debug 
+            "command": "${env:GDK}\\bin\\make.exe -f ${env:GDK}\\makefile.gen release",
+           },
+        "group": {
+          "kind": "build",
+          "isDefault": false
+        }
+      },
+      {
+        "label": "Genesis Build (Clean)",
+        "type": "shell",
+        "windows": {
+            //D:\SGDK\bin\make.exe -f D:\SGDK\makefile.gen debug 
+            "command": "${env:GDK}\\bin\\make.exe -f ${env:GDK}\\makefile.gen clean",
+           },
+        "group": {
+          "kind": "build",
+          "isDefault": false
+        }
+      },
+    ]
+  }
